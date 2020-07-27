@@ -1,1 +1,61 @@
-# sunflower_clone_cording
+# 🌻 SunFlower 클론 코딩 개발일지
+
+[SunFlower](https://github.com/android/sunflower) 프로젝트는 안드로이드 developer 사이트에서 추천하는 앱이다.
+
+SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 했다!
+
+* 앱 소개
+
+    이 앱은 꽃 리스트를 보고 자신의 정원에 심고 싶은 꽃을 선택에 자신의 정원에 추가하는 기능이 주기능인 앱이다. 간단한 앱이지만 여러 Jetpack 라이브러리가 사용되었기 때문에 몇 개의 라이브러리만 사용해본 나에게는 정말 많은 공부가 될 것 같다..!
+
+    이 앱은 단 하나의 Activity만 사용하였고, 나머지는 모두 Fragment이다. 따ㅏㄹ서 Fragment간의 교체는 Jetpack의 Navigation을 사용하였다.
+
+    또한 Fragment들은 ConstraintLayout을 사용하여 작성되었고, data binding이 사용되었다.
+
+    꽃 리스트들을 저장하는 곳은 Room을 사용하였다.
+
+    그리고 UI를 업데이트 하는데에는 ViewModel과 LiveData가 사용되었다.
+
+    앱 테스트는 JUnit과 익스프레소가 사용되었다.
+
+<br>
+
+### 2020/07/23 목
+---
+
+* 프로젝트 생성한 날!
+
+* 프로젝트 구조를 보기 위해 layout들을 슥 봐보니 activity_main 하나와 나머지들은 모두 fragment로 작성되어 있었다.
+
+    activity_main는 프래그먼트들의 교체를 위한 xml이고 실제 뷰들을 보고 싶다면 fragment들을 보아야 할 것 같았다.
+
+    가장 먼저 layout을 클론코딩 해보기로 했고, fragment들 중 가장 먼저 만들어야할 것 같다고 생각한 fragment_view_pager.xml을 따라 작성해보기로 결정했다.
+
+    > 일단 뷰 페이저를 만들어야 화면을 양 옆으로 넘길 수 있고, 뷰 페이저 위에 다른 fragment들이 올려져야 한다고 생각했기 때문이다! 또 다른 fragment들은 recyclerview가 있어(꽃 리스트 같은 데이터를 표현하는 layout) 실제 데이터들을 가지고 와야했기 때문에 kotlin 파일까지 만들어야 하나의 흐름이 끝난다고 생각했기 때문이다.
+
+* fragment_view_pager.xml을 보자마자 멘붕...
+
+    나는 그동안 xml파일을 생성할 때 바로 ConstraintLayout으로 생성했기 때문에 
+
+    <img width="525" alt="01" src="https://user-images.githubusercontent.com/31889335/88261137-acbd4280-cd00-11ea-9985-b225a5584965.png">
+
+    이런식으로 xml파일 최상단에 바로 ConstraintLayout 태그가 오기 마련이였다.
+
+    하지만 SunFlower 프로젝트는 xml 파일을 생성할 때 바로 ConstraintLayout으로 생성하지 않고, layout으로 생성한 파일이였다.
+
+    <img width="825" alt="02" src="https://user-images.githubusercontent.com/31889335/88261394-29502100-cd01-11ea-8bf6-1dfc762e992a.png">
+
+    이렇게 Root element를 constraintLayout이 아닌 layout으로 하여 파일을 생성하면 
+
+    <img width="479" alt="03" src="https://user-images.githubusercontent.com/31889335/88261533-7633f780-cd01-11ea-94c2-f67481971129.png">
+
+    위와 같이 최상위 태그가 \<layout></layout> 이 된다.
+
+* CoordinatorLayout...?!
+
+    fragment_view_pager.xml을 생성하고 난 후, 바로 맞이한 뷰 태그는 다름아닌 CoordinatorLayout 태그였다,, 한 번도 사용해본 적이 없는 태그라 바로 공부에 들어갔다.
+
+    
+
+
+
