@@ -55,7 +55,12 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
     fragment_view_pager.xml을 생성하고 난 후, 바로 맞이한 뷰 태그는 다름아닌 CoordinatorLayout 태그였다,, 한 번도 사용해본 적이 없는 태그라 바로 공부에 들어갔다.
 
-    
+<br>
+
+### 2020/07/27 월
+---
+   
+* build 파일 구성하는 것에 꽂혀서 build 파일에 대해 공부하고 root project 수준의 build.gradle 파일에 모듈에서 사용될 라이브러리 버전들 명시했다.
 
 
 
