@@ -1,4 +1,4 @@
-# 🌻 SunFlower 클론 코딩 개발일지
+# 🌻 초히의 SunFlower 클론 코딩 개발일지
 
 [SunFlower](https://github.com/android/sunflower) 프로젝트는 안드로이드 developer 사이트에서 추천하는 앱이다.
 
@@ -21,7 +21,6 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 <br>
 
 ### 2020/07/23 목
----
 
 * 프로젝트 생성한 날!
 
@@ -58,9 +57,20 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 <br>
 
 ### 2020/07/27 월
----
    
 * build 파일 구성하는 것에 꽂혀서 build 파일에 대해 공부하고 root project 수준의 build.gradle 파일에 모듈에서 사용될 라이브러리 버전들 명시했다.
 
+* [build 파일 구성에 대해 공부하고 정리한 포스팅](https://choheeis.github.io/newblog//articles/2020-07/AppBuild)
 
+<br>
+
+### 2020/08/03 월
+
+* fragment_view_pager.xml로 돌아와서 xml 구조를 살펴보았다. 가장 부모 태그는 \<layout> 태그였는데 이 태그는 데이터 바인딩과 관련이 있는 것 같아 \<layout> 태그를 일단 무시하고 가장 큰 부모 태그를 \<CoordinatorLayout> 태그로 작성하였다.
+
+* CoordinatorLayout 에 대해 공부해보았다.
+
+* [CoordinatorLayout에 대해 공부하고 정리한 포스팅](https://choheeis.github.io/newblog//articles/2020-07/CoordinatorLayout)
+
+<br>
 
