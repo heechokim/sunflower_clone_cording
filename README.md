@@ -50,15 +50,11 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
     위와 같이 최상위 태그가 \<layout></layout> 이 된다.
 
-* CoordinatorLayout...?!
-
-    fragment_view_pager.xml을 생성하고 난 후, 바로 맞이한 뷰 태그는 다름아닌 CoordinatorLayout 태그였다,, 한 번도 사용해본 적이 없는 태그라 바로 공부에 들어갔다.
-
 <br>
 
 ### 2020/07/27 월
    
-* build 파일 구성하는 것에 꽂혀서 build 파일에 대해 공부하고 root project 수준의 build.gradle 파일에 모듈에서 사용될 라이브러리 버전들 명시했다.
+* fragment_view_pager.xml 에서 CoordinatorLayout을 사용하려 빌드 파일에 종속성 추가하려던 찰나 build 파일 구성하는 것에 꽂혀서 build 파일에 대해 공부하고 root project 수준의 build.gradle 파일에 모듈에서 사용될 라이브러리 버전들 명시했다.
 
 * [build 파일 구성에 대해 공부하고 정리한 포스팅](https://choheeis.github.io/newblog//articles/2020-07/AppBuild)
 
@@ -74,3 +70,10 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
 <br>
 
+### 2020/08/04 화
+
+* xml 속성 중 android:fitsSystemWindow라는 속성이 사용되었길래 찾아보았더니 status bar를 투명 상태로 했을 경우 status bar와 다른 뷰들이 겹쳐 보이는 문제가 발생하는 것을 방지하기 위함이였다!
+
+~~~kotlin
+
+~~~
