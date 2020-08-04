@@ -72,8 +72,32 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
 ### 2020/08/04 화
 
-* xml 속성 중 android:fitsSystemWindow라는 속성이 사용되었길래 찾아보았더니 status bar를 투명 상태로 했을 경우 status bar와 다른 뷰들이 겹쳐 보이는 문제가 발생하는 것을 방지하기 위함이였다!
+* xml 속성 중 android:fitsSystemWindow 라는 속성이 사용되었길래 찾아보았더니 status bar를 투명 상태로 했을 경우 status bar와 다른 뷰들이 겹쳐 보이는 문제가 발생하는 것을 방지하기 위함이였다!
 
-~~~kotlin
+* __android:fitsSystemWindow__ 라는 속성은 [View](https://developer.android.com/reference/android/view/View) 클래스에 속해있는 속성으로 status bar나 안드로이드 화면 하단의 홈, 뒤로가기 버튼이 있는 layout과 같은 안드로이드 시스템 윈도우의 내부에 해당 layout이 배치되게 해주는 속성이다.
 
-~~~
+    만약
+
+    <img width="606" alt="01" src="https://user-images.githubusercontent.com/31889335/89292941-18f05c80-d698-11ea-98cb-3e6afcb84f71.png">
+
+    AppTheme Style 에 위와 같이 status bar를 투명하게 하는 속성을 추가했다고 가정하자.
+
+    이 경우, activity_main.xml 이 다음과 같다면
+
+    <img width="477" alt="02" src="https://user-images.githubusercontent.com/31889335/89293214-7edce400-d698-11ea-99aa-0dac7939daf3.png">
+
+    렌더링된 화면은 
+
+    <img width="328" alt="03" src="https://user-images.githubusercontent.com/31889335/89293309-ad5abf00-d698-11ea-9345-119e4422aac6.png">
+
+    이렇게 status bar와 TextView가 겹쳐 보이게 된다.
+
+    따라서 이 때, 아래의  코드처럼 __android:fitsSystemWindow__ 라는 속성을 TextView에 추가하게 되면 TextView는 
+
+    <img width="468" alt="04" src="https://user-images.githubusercontent.com/31889335/89293685-44277b80-d699-11ea-92a3-3d65f816e29f.png">
+
+    status bar 내부에 존재하는 화면을 기준으로 맞춰지게 된다.
+
+    <img width="324" alt="05" src="https://user-images.githubusercontent.com/31889335/89293805-7b962800-d699-11ea-8c84-1cb46b35c42a.png">
+
+    <br>
