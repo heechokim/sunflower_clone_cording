@@ -4,7 +4,7 @@
 
 SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 했다!
 
-* 앱 소개
+## 앱 소개
 
     이 앱은 꽃 리스트를 보고 자신의 정원에 심고 싶은 꽃을 선택에 자신의 정원에 추가하는 기능이 주기능인 앱이다. 간단한 앱이지만 여러 Jetpack 라이브러리가 사용되었기 때문에 몇 개의 라이브러리만 사용해본 나에게는 정말 많은 공부가 될 것 같다..!
 
@@ -17,6 +17,20 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
     그리고 UI를 업데이트 하는데에는 ViewModel과 LiveData가 사용되었다.
 
     앱 테스트는 JUnit과 익스프레소가 사용되었다.
+
+<br>
+
+## 커밋 메시지 형식
+
+* Add Codes - 새로운 코드를 추가했을 경우
+
+* Implement Features - 새로운 기능을 추가하거나 완성했을 경우
+
+* Refactor Codes - 기존에 작성한 코드를 수정했을 경우
+
+* Fix Bugs - 오류를 해결했을 경우
+
+* Create UI XML - 새로운 xml 파일을 생성했을 경우
 
 <br>
 
