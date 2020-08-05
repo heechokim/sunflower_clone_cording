@@ -34,7 +34,7 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
 <br>
 
-### 2020/07/23 목
+### 🍉 2020/07/23 목
 
 * 프로젝트 생성한 날!
 
@@ -66,7 +66,7 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
 <br>
 
-### 2020/07/27 월
+### 🍉 2020/07/27 월
    
 * fragment_view_pager.xml 에서 CoordinatorLayout을 사용하려 빌드 파일에 종속성 추가하려던 찰나 build 파일 구성하는 것에 꽂혀서 build 파일에 대해 공부하고 root project 수준의 build.gradle 파일에 모듈에서 사용될 라이브러리 버전들 명시했다.
 
@@ -74,7 +74,7 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
 <br>
 
-### 2020/08/03 월
+### 🍉 2020/08/03 월
 
 * fragment_view_pager.xml로 돌아와서 xml 구조를 살펴보았다. 가장 부모 태그는 \<layout> 태그였는데 이 태그는 데이터 바인딩과 관련이 있는 것 같아 \<layout> 태그를 일단 무시하고 가장 큰 부모 태그를 \<CoordinatorLayout> 태그로 작성하였다.
 
@@ -84,7 +84,7 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
 <br>
 
-### 2020/08/04 화
+### 🍉 2020/08/04 화
 
 * xml 속성 중 android:fitsSystemWindow 라는 속성이 사용되었길래 찾아보았더니 status bar를 투명 상태로 했을 경우 status bar와 다른 뷰들이 겹쳐 보이는 문제가 발생하는 것을 방지하기 위함이였다!
 
@@ -116,7 +116,7 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
     <br>
     
-### 2020/08/05 수
+### 🍉 2020/08/05 수
 
 * styles.xml 파일에 앱의 기본 background 색상을 추가하였다.
 
