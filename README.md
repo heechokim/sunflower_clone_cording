@@ -127,4 +127,10 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
     <img width="767" alt="12" src="https://user-images.githubusercontent.com/31889335/89434752-e2414180-d77e-11ea-8a52-d2ebe1b99c86.png">
     
     위와 같이 manifest 파일에는 Theme.SunFlowerClone 이라고 작성해놓고, styles.xml에서는 바로 \<style> 태그의 이름을 Theme.SunFlowerClone 이라고 하지 않고, Base.Theme.SunFlowerClone이라고 한 후, 또 다른 \<style> 태그를 만들어서 Base.Theme.SunFlowerClone 스타일을 부모로 갖는 Theme.SunFlowerClone이라는 이름을 붙인 것!
+    
+* 또한, 앱의 모든 화면의 배경 색을 줘야 할 경우에는 다음과 같이 App의 기본 Theme에 __android:colorBackground__ 속성을 넣어주면 된다!
+
+    <img width="756" alt="14" src="https://user-images.githubusercontent.com/31889335/89435344-b3779b00-d77f-11ea-9e4f-160502fd0b0a.png">
+
+    <br>
 
