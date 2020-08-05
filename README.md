@@ -115,3 +115,16 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
     <img width="324" alt="05" src="https://user-images.githubusercontent.com/31889335/89293805-7b962800-d699-11ea-8c84-1cb46b35c42a.png">
 
     <br>
+    
+### 2020/08/05 수
+
+* styles.xml 파일에 앱의 기본 background 색상을 추가하였다.
+
+* styles.xml 파일을 구성할 때 신기한 장면을 목격했다. sunFlower 앱은 다음과 같이 AppTheme을 구성했다.
+
+    <img width="526" alt="13" src="https://user-images.githubusercontent.com/31889335/89434747-e0777e00-d77e-11ea-9fad-d5f70361e0b9.png">
+    
+    <img width="767" alt="12" src="https://user-images.githubusercontent.com/31889335/89434752-e2414180-d77e-11ea-8a52-d2ebe1b99c86.png">
+    
+    위와 같이 manifest 파일에는 Theme.SunFlowerClone 이라고 작성해놓고, styles.xml에서는 바로 \<style> 태그의 이름을 Theme.SunFlowerClone 이라고 하지 않고, Base.Theme.SunFlowerClone이라고 한 후, 또 다른 \<style> 태그를 만들어서 Base.Theme.SunFlowerClone 스타일을 부모로 갖는 Theme.SunFlowerClone이라는 이름을 붙인 것!
+
