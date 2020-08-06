@@ -134,3 +134,11 @@ SunFlower 앱은 Android Jetpack을 잘 사용하고 있어 Jetpack을 공부하
 
     <br>
 
+
+### 🍉 2020/08/06 목
+
+* fragment_view_pager.xml 파일에서 사용되는 AppBar에 대해서 공부한 후, AppBarLayout과 ToolBar 코드를 추가하였다.
+
+* [AppBar에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-08/AppBarTop)
+
+<br>
