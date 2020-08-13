@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
-        <!-- TODO: 아직 다 못함, SunFlower랑 비교하면서 더 추가해야함! -->
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/material_toolbar"
             android:layout_width="match_parent"
@@ -24,6 +23,7 @@
                 android:layout_height="?attr/actionBarSize"
                 android:text="@string/app_name"
                 android:gravity="center"
+                android:textColor="@android:color/white"
                 android:textAppearance="?attr/textAppearanceHeadline5"/>
 
         </com.google.android.material.appbar.MaterialToolbar>
