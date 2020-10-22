@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-217037218/SunFlowerClone.iml" filepath="$PROJECT_DIR$/.idea/modules/-217037218/SunFlowerClone.iml" group="SunFlowerClone" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="SunFlowerClone/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-217037218/SunFlowerClone.iml" filepath="$PROJECT_DIR$/.idea/modules/-217037218/SunFlowerClone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SunFlowerClone.app.iml" filepath="$PROJECT_DIR$/.idea/modules/SunFlowerClone.app.iml" />
     </modules>
   </component>
 </project>
