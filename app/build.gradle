@@ -5,6 +5,9 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
+    buildFeatures {
+        dataBinding true
+    }
 
     defaultConfig {
         applicationId "com.example.sunflowerclone"
@@ -41,7 +44,7 @@ dependencies {
     implementation "com.google.android.material:material:${rootProject.ext.materialDesignVersion}"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
