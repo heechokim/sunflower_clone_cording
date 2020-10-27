@@ -7,8 +7,10 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
 ## 프로젝트 폴더 구조
 
 * __MainActivity__
-    * xml 파일 : activity_main.xml
+    * activity_main.xml
         * Navigation과 연결된 Fragment 한 개가 배치되어 있음
+    * onCreate()
+        * data binding을 사용하여 activity_main.xml 파일을 binding 함(활성 뷰로 설정)
 
 ## SunFlower App 클론 코딩하면서 나에게 적용하면 좋은 것들!
 
@@ -81,3 +83,5 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
 * [View Binding에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-09/viewBinding)
 
 * [Fragment Life Cycle에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-09/fragment)
+
+* [Data Binding에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-10/dataBinding)
