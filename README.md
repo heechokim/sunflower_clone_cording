@@ -31,13 +31,6 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
             assistedInjectVersion = '0.5.2'
             constraintLayoutVersion = '2.0.0-beta3'
             coreTestingVersion = '2.0.0'
-            coroutinesVersion = "1.3.0-M2"
-            espressoVersion = '3.1.1'
-            fragmentVersion = '1.1.0-alpha09'
-            glideVersion = '4.10.0'
-            gradleVersion = '4.1.0'
-            gsonVersion = '2.8.2'
-            hiltVersion = '2.28.3-alpha'
             ...
         }
 
@@ -56,17 +49,70 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
     dependencies {
         implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
         implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
-        implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
-        implementation "androidx.fragment:fragment-ktx:$rootProject.fragmentVersion"
         ...
 
         // Testing dependencies
         kaptAndroidTest "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
         androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
-        androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"
         ...
     }
     ~~~
+    
+2. __네이밍 스킬!__
+
+* file 생성시 이름 짓기.
+
+   * xml 파일은 __activity_main.xml__, __fragment_detail__ 처럼 activity, fragment를 앞으로 배치한다.
+   
+   * 클래스 파일은 __MainActivity.kt__, __DetailFragment__ 처럼 해당 xml 파일 이름의 순서를 바꾸어 파스칼법으로 작성한다.
+
+* xml 파일에서 사용하는 id 는 snake 표기법으로 작성하자.
+
+   * fragment의 id는 
+   
+      ~~~xml
+      <fragment
+        android:id="@+id/plant_detail_fragment"
+        ...
+      >
+      ~~~
+      
+      __plant_detail_fragment__ 처럼 fragment를 맨 마지막에 붙인다.
+   
+   * layout의 id는
+   
+      ~~~xml
+      <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         
+      ...
+      </androidx.coordinatorlayout.widget.CoordinatorLayout>
+      ~~~
+      
+      __coordinator_layout__ 과 같이 레이아웃의 고유 이름으로 작성한다. 만약 AppBarLayout을 배치했다면 id는 app_bar_layout 으로 작성하라는 것!
+      
+3. __width, height 값 작성 스킬!__
+
+   * 자식 뷰를 가지는 부모 뷰의 width나 height 값은 wrap_content로 맞춰주자. (즉, 부모 뷰에서 width나 height 높이를 직접 dp 값으로 넣지 말자는 것!)
+   
+      ~~~xml
+      <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+                                                            
+      </com.google.android.material.appbar.AppBarLayout>
+      ~~~
+      
+      위 코드에서 부모 뷰인 AppBarLayout의 width는 match_parent로 맞췄지만(자식 뷰의 크기에 영향을 받지 않을 뷰이기 때문) height는 wrap_content로 맞추었다.
+      
+      자식 뷰인 MaterialToolBar의 height가 언제든지 변경될 수 있기 때문에 자식 뷰의 높이에 부모 뷰가 동적으로 맞춰지도록 한 것!
 
 ## SunFlower App 클론 코딩하며 공부한 것들
 
@@ -74,7 +120,7 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
 
 * [CoordinatorLayout에 대해 공부하고 정리한 포스팅](https://choheeis.github.io/newblog//articles/2020-07/CoordinatorLayout)
 
-* [AppBar에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-08/AppBarTop)
+* [AppBar에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-10/AppBar)
    
 * [ViewPager2에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-08/ViewPager2)
 
