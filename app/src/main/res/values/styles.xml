@@ -13,4 +13,5 @@
     </style>
 
     <style name="Theme.SunFlowerClone" parent="Base.Theme.SunFlowerClone"/>
+    <style name="Theme.Sunflower.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
 </resources>

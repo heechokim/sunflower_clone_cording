@@ -5,17 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.sunflowerclone.adapters.ViewPagerAdapter
+import com.example.sunflowerclone.databinding.FragmentViewPagerBinding
 
 class HomeViewPagerFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate view object
+        val binding = FragmentViewPagerBinding.inflate(inflater, container, false)
 
-    }
+        // Initialize view objects
+        val tabs = binding.tabLayout
+        val viewPager = binding.viewPager
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_view_pager, container, false)
+        // Set viewPager adapter
+        viewPager.adapter = ViewPagerAdapter(this)
+
+        return binding.root
     }
 }
