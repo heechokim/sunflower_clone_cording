@@ -93,6 +93,10 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
       
       __coordinator_layout__ 과 같이 레이아웃의 고유 이름으로 작성한다. 만약 AppBarLayout을 배치했다면 id는 app_bar_layout 으로 작성하라는 것!
       
+* 폴더명은 모두 소문자로 작성하고, 폴더 안에 저장할 파일들이 여러개면 폴더명 가장 마지막에 s(복수형)를 붙이자.
+
+   * Adapter와 관련된 클래스들이 저장될 폴더는 __adapters__ 라고 이름 짓는다.
+      
 3️⃣ __width, height 값 작성 스킬!__
 
    * 자식 뷰를 가지는 부모 뷰의 width나 height 값은 wrap_content로 맞춰주자. (즉, 부모 뷰에서 width나 height 높이를 직접 dp 값으로 넣지 말자는 것!)
