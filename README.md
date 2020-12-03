@@ -136,3 +136,11 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
 * [Fragment Life Cycle에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-09/fragment)
 
 * [Data Binding에 대해서 공부한 포스팅](https://choheeis.github.io/newblog//articles/2020-10/dataBinding)
+
+## Contributed
+
+[Official SunFlower App](https://github.com/android/sunflower/pull/669) 의 Contributor가 되었다!
+
+--> [Official SunFlower App의 Toolbar 이름 바꿈](https://github.com/android/sunflower/pull/669)
+
+
