@@ -139,7 +139,7 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
 
 ## Contributed
 
-[Official SunFlower App](https://github.com/android/sunflower/pull/669) 의 Contributor가 되었다!
+[Official SunFlower App](https://github.com/android/sunflower) 의 Contributor가 되었다!
 
 --> [Official SunFlower App의 Toolbar 이름 바꿈](https://github.com/android/sunflower/pull/669)
 
