@@ -16,47 +16,40 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
 
 1️⃣ __Build 파일에 라이브러리 Dependency 작성할 때 root build.gradle 파일에 버전 정리하고, app build.gradle 파일에서 사용하기!__
 
-    ~~~kotlin
-    // 1. root build.gradle 파일 
-    buildscript {
-        // Define versions in a single place
-        ext {
-            // Sdk and tools
-            compileSdkVersion = 30
-            minSdkVersion = 21
-            targetSdkVersion = 30
+ ~~~kotlin
+ // 1. root build.gradle 파일 
+ buildscript {
+     // Define versions in a single place
+     ext {
+         // Sdk and tools
+         compileSdkVersion = 30
+         minSdkVersion = 21
+         targetSdkVersion = 30
 
-            // App dependencies
-            appCompatVersion = '1.1.0'
-            assistedInjectVersion = '0.5.2'
-            constraintLayoutVersion = '2.0.0-beta3'
-            coreTestingVersion = '2.0.0'
-            ...
-        }
+         // App dependencies
+         appCompatVersion = '1.1.0'
+         constraintLayoutVersion = '2.0.0-beta3'
+         ...
+     }
 
-        repositories {
-            google()
-            jcenter()
-        }
-        
-        ...
-    }
-    ~~~
-    
-    ~~~kotlin
-    // 2. app build.gradle 파일 예시
-    ...
-    dependencies {
-        implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
-        implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
-        ...
+     repositories {
+         google()
+         jcenter()
+     }
 
-        // Testing dependencies
-        kaptAndroidTest "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
-        androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
-        ...
-    }
-    ~~~
+     ...
+ }
+ ~~~
+
+ ~~~kotlin
+ // 2. app build.gradle 파일 예시
+ ...
+ dependencies {
+     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
+     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+     ...
+ }
+ ~~~
     
 2️⃣ __네이밍 스킬!__
 
