@@ -117,7 +117,14 @@ Jetpack을 공부하기에 좋은 앱인 것 같아 클론 코딩해보기로 �
       위 코드에서 부모 뷰인 AppBarLayout의 width는 match_parent로 맞췄지만(자식 뷰의 크기에 영향을 받지 않을 뷰이기 때문) height는 wrap_content로 맞추었다.
       
       자식 뷰인 MaterialToolBar의 height가 언제든지 변경될 수 있기 때문에 자식 뷰의 높이에 부모 뷰가 동적으로 맞춰지도록 한 것!
+ 
+4️⃣ __주석 작성 스킬__
+
+   * 영어로 작성할 때는 동사(첫 알파벳 대문자)로 시작하게끔 작성한다.
+   
+      예 ) // Initialize view objects
       
+      예 ) // Set the icon and text for each tab
 
 ## SunFlower App 클론 코딩하며 공부한 것들
 
