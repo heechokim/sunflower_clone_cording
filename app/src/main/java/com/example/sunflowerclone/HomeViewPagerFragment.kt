@@ -30,20 +30,20 @@ class HomeViewPagerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Initialize view objects
-        val tablayout = view.tab_layout
+        val tabLayout = view.tab_layout
         val viewPager = view.view_pager
 
         // Set viewPager adapter
         viewPager.adapter = ViewPagerAdapter(this)
 
         // Set the icon and text for each tab
-        TabLayoutMediator(tablayout, viewPager) { tab: TabLayout.Tab, position: Int ->
+        TabLayoutMediator(tabLayout, viewPager) { tab: TabLayout.Tab, position: Int ->
             tab.setIcon(getTabIcon(position))
             tab.text = getTabTitle(position)
         }.attach()
 
-        // TODO:(이게 무엇인가?)
-        //(activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
+        // Set activity's action bar
+        (activity as AppCompatActivity).setSupportActionBar(view.material_toolbar)
     }
 
     private fun getTabIcon(position: Int): Int {
